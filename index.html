@@ -9,29 +9,61 @@
 </head>
 <body>
 
+    <div class="info-topo">
+        <h1>AO VIVO</h1>
+        <span class="data-hora">escopo da data</span>
+        <button id="modo-escuro">escuro</button>
+    </div>
+
     <header>
         <h1>Extravagância</h1>
         <nav>
             <ul>
-                <a href="">Tecnologia</a>
-                <a href="">Negócios</a>
-                <a href="">Ciência</a>
-                <a href="">Cultura</a>
-                <a href="">Opinião</a>
+                <li><a href="">Tecnologia</a></li>
+                <li><a href="">Negócios</a></li>
+                <li><a href="">Ciência</a></li>
+                <li><a href="">Cultura</a></li>
+                <li><a href="">Opinião</a></li>
             </ul>
         </nav>
+
+        <form>
+            <input type="search" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </form>
+
     </header>
 
     <main>
-        <div class="noticia-principal">
-            <img class="imagem-noticia" src="imgs/ladygagarosas.webp">
-            <span id="noticia-categoria">Cultura</span>
-            <h2>MOTHER! Conheça a empresa de Biotecnologia da Mamãe do ano, Lady Gaga</h2>
-            <p>Outer Bio, empresa fundada por Michael Polansky, noivo da única Lady Gaga, foca em pesquisas científicas e na saúde da pele, utilizando amostras de tecido humano </p>
-            <span>Por: Clarice Miranda 21 set 2026 10min de leitura</span>
-            <button>Ler Matéria Completa</button>
-        </div>
-        <section id="ultimas">
+
+        <section id="bloco-principal">
+            <article class="noticia-principal">
+                <img class="imagem-noticia" src="imgs/ladygagarosas.webp">
+                <span id="noticia-categoria">Cultura</span>
+                <h2>MOTHER! Conheça a empresa de Biotecnologia da Mamãe do ano, Lady Gaga</h2>
+                <p>Outer Bio, empresa fundada por Michael Polansky, noivo da única Lady Gaga, foca em pesquisas científicas e na saúde da pele, utilizando amostras de tecido humano </p>
+                <span>Por: Clarice Miranda 21 set 2026 10min de leitura</span>
+                <button>Ler Matéria Completa</button>
+            </article>
+
+            <div id="grid-art-paralelo">
+
+                <article>
+                    <h2>Notícia 1</h2>
+                </article>
+
+                <article>
+                    <h2>Notícia 2</h2>
+                </article>
+
+                <article>
+                    <h2>Notícia 3</h2>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="bloco-medio">
             <h2>Mais Notícias</h2>
             <div id="grid-UL-noticias">
 
@@ -39,22 +71,25 @@
             <button>Ver Mais</button>
         </section>
 
-        <div class="form-newsletter">
-            <h3>Seja Extravagante!</h3>
-            <p>Assine nossa newsletter e extravaze! Principais notícias às Terças-feiras.</p>
-            <form>
-                <input type="email" id="email" required>
-                <button type="submit">Assinar</button>
-            </form>
-        </div>
+        <section class="bloco-final">
+            <div class="form-newsletter">
+                <h3>Seja Extravagante!</h3>
+                <p>Assine nossa newsletter e extravaze! Principais notícias às Terças-feiras.</p>
+                <form>
+                    <input type="email" id="email" placeholder="digite seu email" required>
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </section>
+            
     </main>
 
     <footer>
         <p>&copy;2026 Extravagância - Portal de Notícias</p>
         <ul>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-            <a href="">Termos</a>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Termos</a></li>
         </ul>
     </footer>
     <script src="script.js"></script>
