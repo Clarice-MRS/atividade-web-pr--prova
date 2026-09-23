@@ -18,7 +18,7 @@ const ultimasNoticias = [
     },
 
     {
-        imagem: "i",
+        imagem: "",
         categoria: "",
         manchete: "",
         autor: "",
