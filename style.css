@@ -16,6 +16,9 @@
     --ciência: #0F8C7E;
     --cultura: #B8348F;
     --opinião: #5A6472;
+
+    --fonteTitulo: 'Newsreader';
+    --fontePadrao: 'Inter';
 }
 
 
@@ -24,20 +27,26 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 1rem;
     background-color: var(--paper);
+    box-shadow: 0px 0px 3px 2px var(--line);
 }
 
 header h1 {
     letter-spacing: 1rem;
+    font-family: var(--fonteTitulo);
 }
 
 header ul {
     display: flex;
     list-style: none;
+    gap: 1rem;
+    font-family: var(--fontePadrao);
 }
 
 header a {
     text-decoration: none;
+    color: var(--ink);
 }
 
 .form-buscar input {
@@ -65,9 +74,15 @@ header a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    width: 80%;
+    width: 70%;
     border: solid 1px black;
     margin: 0 auto;
+    gap: 0;
+    padding: 1rem;
+}
+
+#grid-not-paralelo{
+    border: solid 1px black;
 }
 
 #noticia-categoria {
@@ -84,15 +99,26 @@ header a {
     width: 600px;
 }
 
+.bloco-dois {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+    border: solid 1px black;
+    margin: 0 auto;
+    gap: 0;
+    padding: 1rem;
+}
+
 /********************
     BLOCO FINAL 
 ********************/
 
 .bloco-final {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding: 1rem;
 }
