@@ -1,3 +1,7 @@
+/********************
+    GERAL 
+********************/
+
 * {
     margin: 0;
     padding: 0;
@@ -21,50 +25,26 @@
     --fontePadrao: 'Inter';
 }
 
-
-header {
-    display: flex; 
-    align-items: center;
-    position: sticky;
-    top: 0;
-    padding: 1rem;
-    background-color: var(--paper);
-    box-shadow: 0px 0px 3px 2px var(--line);
-}
-
-header h1 {
-    letter-spacing: 1rem;
-    font-family: var(--fonteTitulo);
-}
-
-header ul {
+.info-topo{
     display: flex;
-    list-style: none;
-    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.info-topo span {
     font-family: var(--fontePadrao);
 }
 
-header a {
-    text-decoration: none;
-    color: var(--ink);
+.info-topo p {
+    color: var(--signal);
+    font-family: var(--fontePadrao);
 }
 
-.form-buscar input {
-    width: 40vh;
-    background-color: var(--mist);
-    border-radius: 15px;
-    border: none;
-    padding: 8px;
-    margin: 0 1rem;
-}
-
-.form-buscar button {
-    color: var(--line);
-    padding: 0.7rem;
-    border-radius: 15px;
-    font-size: 13px;
-    background-color: #7b0922;
-    border: none;
+.info-topo button {
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: solid 1px var(--mist);
+    background-color: var(--paper);
 }
 
 /* BLOCOS PRINCIPAIS */
@@ -81,6 +61,17 @@ header a {
     padding: 1rem;
 }
 
+.noticia-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--fontePadrao);
+}
+
+.noticia-principal h2 {
+    font-family: var(--fonteTitulo);
+}
+
 #grid-not-paralelo{
     border: solid 1px black;
 }
@@ -88,7 +79,7 @@ header a {
 #noticia-categoria {
     display: flex;
     justify-content: center;
-    width: 5%;
+    width: 10%;
     border-radius: 5px;
     color: var(--paper);
     background-color: var(--cultura);
@@ -109,6 +100,102 @@ header a {
     margin: 0 auto;
     gap: 0;
     padding: 1rem;
+}
+
+
+/********************
+    HEADER 
+********************/
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    background-color: var(--paper);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    letter-spacing: 1rem;
+    border-top: 3px solid #183c62;
+    border-bottom: 3px solid #183c62;
+    padding: 10px 0px;
+    width: fit-content;
+    padding-left: 1rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-family: var(--fontePadrao);
+}
+
+header ul a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #183c62;
+    transition: width 0.3s;
+}
+
+header ul a:hover::after {
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--ink);
+}
+
+/* BUSCAR NOTÍCIAS */
+
+.buscar-noticia {
+    background-color: var(--mist);
+    display: flex;
+    border: 2px solid var(--line);
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    gap: 0;
+}
+
+.buscar-noticia i {
+    display: block;
+    font-size: 20px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.buscar-noticia input {
+    background-color: var(--mist);
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.buscar-noticia:focus-within {
+    border-color: #183c62;
 }
 
 /********************
@@ -139,15 +226,18 @@ header a {
 .form-newsletter h3 {
     font-size: 30px;
     color: var(--line);
+    font-family: var(--fontePadrao); 
 }
 
 .form-newsletter p {
     color: var(--line);
+    font-family: var(--fontePadrao);
 }
 
 .form-newsletter input {
     width: 40vh;
     background-color: var(--mist);
+    font-family: var(--fontePadrao);
     border-radius: 15px;
     border: none;
     padding: 8px;
@@ -156,6 +246,7 @@ header a {
 
 .form-newsletter button {
     color: var(--line);
+    font-family: var(--fontePadrao);
     padding: 0.7rem;
     border-radius: 15px;
     font-size: 13px;
@@ -176,6 +267,7 @@ footer {
     gap: 1rem;
     box-shadow: 0px 0px 2px 2px var(--line);
     color: var(--slate);
+    font-family: var(--fontePadrao);
 }
 
 footer ul {
@@ -188,4 +280,5 @@ footer ul {
 footer a {
     text-decoration: none;
     color: var(--slate);
+    font-family: var(--fontePadrao);
 }

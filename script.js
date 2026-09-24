@@ -54,11 +54,11 @@ const ultimasNoticias = [
     },
 
     {
-        imagem: "i",
-        categoria: "",
-        manchete: "",
-        autor: "",
-        data: "",
-        tempo: ""
+        imagem: "imgs/gojonograjau.jpeg",
+        categoria: "Cultura",
+        manchete: "Descubra: Gojo está vivo e morando no Grajaú",
+        autor: "Joyce Gomes",
+        data: "01 agosto",
+        tempo: "4 min"
     },
 ]
