@@ -1,3 +1,26 @@
+const noticiasParalelas = [
+    {
+        id: "1",
+        manchete: "O gótico volta às tendências em 2026: como usar preto no verão",
+        categoria: "Opinião",
+        data: "28 set"
+    },
+
+    {
+        id: "2",
+        manchete: "Perapad 11: o que há de novo?",
+        categoria: "Tecnologia",
+        data: "13 set"
+    },
+
+    {
+        id: "3",
+        manchete: "Frankenstein avança em sua pesquisa sobre ressurreição; entenda",
+        categoria: "Ciência",
+        data: "01 set"
+    }
+]
+
 const ultimasNoticias = [
     {
         imagem: "img/tomholland.jpg",
@@ -10,7 +33,7 @@ const ultimasNoticias = [
 
     {
         imagem: "img/relampagomcqueen.jpg",
-        categoria: "Ciências",
+        categoria: "Ciência",
         manchete: "Relâmpago Mcqueen descobre um novo combústivel.",
         autor: "Matheus Feitosa",
         data: "19 set",
@@ -62,3 +85,21 @@ const ultimasNoticias = [
         tempo: "4 min"
     },
 ]
+
+function criarNoticiasPararelas() {
+
+    for(const noticiaPararela of noticiasParalelas) {
+
+        const cardsPararelo = document.getElementById("grid-not-paralela");
+        cardsPararelo.innerHTML += ` 
+        <article class="noticia-info"> 
+                    <h1 class="id">${noticiaPararela.id}</div>
+                    <h2 class="manchete">${noticiaPararela.manchete}</h2>  
+                    <span class="categoria">${noticiaPararela.categoria} •</span>  
+                    <span class="data">${noticiaPararela.data}</span> 
+        </article>
+    `;
+    }    
+}
+
+criarNoticiasPararelas();
