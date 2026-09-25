@@ -93,10 +93,14 @@ function criarNoticiasPararelas() {
         const cardsPararelo = document.getElementById("grid-not-paralela");
         cardsPararelo.innerHTML += ` 
         <article class="noticia-info"> 
-                    <h1 class="id">${noticiaPararela.id}</div>
-                    <h2 class="manchete">${noticiaPararela.manchete}</h2>  
-                    <span class="categoria">${noticiaPararela.categoria} •</span>  
-                    <span class="data">${noticiaPararela.data}</span> 
+            <h1 class="id">${noticiaPararela.id}</h1>
+            <div class="conteudo-noticia">
+                <h2 class="manchete">${noticiaPararela.manchete}</h2>
+                <div class="informacoes">
+                    <span class="categoria">${noticiaPararela.categoria} •</span>
+                    <span class="data">${noticiaPararela.data}</span>
+                </div>
+            </div> 
         </article>
     `;
     }    
