@@ -8,7 +8,7 @@ const noticiasParalelas = [
 
     {
         id: "2",
-        manchete: "Perapad 11: o que há de novo?",
+        manchete: "Lançamento! Perapad 11: O que há de novo? Novas cores...",
         categoria: "Tecnologia",
         data: "13 set"
     },
@@ -92,7 +92,7 @@ function criarNoticiasPararelas() {
 
         const cardsPararelo = document.getElementById("grid-not-paralela");
         cardsPararelo.innerHTML += ` 
-        <article class="noticia-info"> 
+        <aside class="noticia-info"> 
             <h1 class="id">${noticiaPararela.id}</h1>
             <div class="conteudo-noticia">
                 <h2 class="manchete">${noticiaPararela.manchete}</h2>
@@ -101,7 +101,7 @@ function criarNoticiasPararelas() {
                     <span class="data">${noticiaPararela.data}</span>
                 </div>
             </div> 
-        </article>
+        </aside>
     `;
     }    
 }
